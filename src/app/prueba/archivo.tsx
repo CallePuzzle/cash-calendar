@@ -1,9 +1,9 @@
-import styles from "./archivo.module.scss";
+import { Button } from "@/components/ui/button";
 
-export default function Archivo() {
+export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>soy el archivo de la prueba</h1>
+    <div>
+      <Button>Click me</Button>
     </div>
   );
 }
