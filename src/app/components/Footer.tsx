@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/Footer.scss";
+import "@/app/styles/components/Footer.scss";
 import Link from "next/link";
 
 function Footer() {

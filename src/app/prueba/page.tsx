@@ -1,5 +1,5 @@
-import Archivo from "./archivo";
-import { Calendar } from "../components/calendar";
+import Archivo from "@/app/prueba/archivo";
+import Calendar from "@/app/components/Calendar";
 
 export default function Prueba() {
   return (

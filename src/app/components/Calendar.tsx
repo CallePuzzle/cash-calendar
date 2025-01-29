@@ -1,10 +1,10 @@
 "use client";
 
-import * as React from "react";
+import React from "react";
 
 import { Calendar as CalendarUI } from "@/components/ui/calendar";
 
-export function Calendar() {
+function Calendar() {
   const [date, setDate] = React.useState<Date | undefined>(new Date());
 
   return (
@@ -16,3 +16,4 @@ export function Calendar() {
     />
   );
 }
+export default Calendar;
