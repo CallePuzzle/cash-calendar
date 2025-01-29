@@ -1,0 +1,57 @@
+@keyframes arrowUp {
+  100% {
+    transform: translatey(-1rem);
+  }
+}
+
+.footer {
+  min-width: 320px;
+  background-color: rgb(54, 141, 19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+
+  &__arrow {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.7rem;
+    margin-left: -1.5rem;
+
+    &:hover {
+      animation-name: arrowUp;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 6;
+      animation-direction: alternate;
+      cursor: pointer;
+    }
+
+    & i {
+      font-size: 1.5rem;
+      color: rgb(54, 141, 19);
+    }
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 2rem;
+
+    & p {
+      color: white;
+      & i {
+        color: greenyellow;
+      }
+    }
+  }
+}
