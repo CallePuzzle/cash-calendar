@@ -4,7 +4,7 @@ import "@/app/styles/components/Header.scss";
 import Image from "next/image";
 import logo from "@/app/images/logo_cash_calendar2.png";
 import burger from "@/app/images/burger_menu.png";
-import Nav_ul from "./Nav_ul";
+import NavList from "@/app/components/header/NavList";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -26,8 +26,8 @@ function Header() {
           <div className="nav__burger">
             <Image src={burger} alt="burger menu" onClick={handleOpenClose} />
           </div>
-          {open && <Nav_ul isBurgerNav={true} />}
-          <Nav_ul isBurgerNav={false} />
+          {open && <NavList isBurgerNav={true} />}
+          <NavList isBurgerNav={false} />
         </nav>
       </header>
     </>

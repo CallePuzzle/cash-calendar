@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import "@/app/styles/components/Nav_ul.scss";
+import "@/app/styles/components/NavList.scss";
 
-function Nav_ul({ isBurgerNav }: { isBurgerNav: boolean }) {
+function NavList({ isBurgerNav }: { isBurgerNav: boolean }) {
   return (
     <ul className={isBurgerNav ? "nav__menu__burger" : "nav__menu"}>
       <li>
@@ -34,4 +34,4 @@ function Nav_ul({ isBurgerNav }: { isBurgerNav: boolean }) {
   );
 }
 
-export default Nav_ul;
+export default NavList;
