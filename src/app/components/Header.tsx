@@ -1,11 +1,16 @@
 import React from "react";
 import "../styles/components/Header.scss";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/app/images/logo_cash_calendar.jpg";
 
 function Header() {
   return (
     <>
       <header className="header">
+        <div>
+          <Image src={logo} alt="logo de cash calendar" />
+        </div>
         <h1 className="header__title">Cash Calendar</h1>
         <nav className="nav">
           <ul className="nav__menu">
