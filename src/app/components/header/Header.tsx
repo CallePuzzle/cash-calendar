@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import "@/app/styles/components/Header.scss";
 import Image from "next/image";
 import logo from "@/app/images/logo_cash_calendar2.png";
 import burger from "@/app/images/burger_menu.png";
@@ -26,8 +25,8 @@ function Header() {
           <div className="nav__burger">
             <Image src={burger} alt="burger menu" onClick={handleOpenClose} />
           </div>
-          {open && <Nav isburgerNav={true} />}
-          <Nav isburgerNav={false} />
+          {open && <Nav isBurgerNav={true} />}
+          <Nav isBurgerNav={false} />
         </nav>
       </header>
     </>

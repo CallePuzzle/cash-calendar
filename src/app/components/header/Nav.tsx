@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import "@/app/styles/components/Header.scss";
 
-function Nav({ isburgerNav }) {
+function Nav({ isBurgerNav }: { isBurgerNav: boolean }) {
   return (
-    <ul className={isburgerNav ? "nav__menu__burger" : "nav__menu"}>
+    <ul className={isBurgerNav ? "nav__menu__burger" : "nav__menu"}>
       <li>
         <Link className="nav__menu__link" href="/welcome">
           Bienvenida
