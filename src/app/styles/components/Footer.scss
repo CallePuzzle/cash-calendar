@@ -6,7 +6,7 @@
 
 .footer {
   min-width: 320px;
-  background-color: rgb(54, 141, 19);
+  background-color: rgb(147, 234, 210);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@
 
     & i {
       font-size: 1.5rem;
-      color: rgb(54, 141, 19);
+      color: rgb(19 182 179);
     }
   }
 
@@ -48,9 +48,9 @@
     margin: 2rem;
 
     & p {
-      color: white;
+      color: black;
       & i {
-        color: greenyellow;
+        color: rgb(228, 152, 34);
       }
     }
   }
