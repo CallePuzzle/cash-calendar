@@ -3,11 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(54, 141, 19);
+  background-color: #93ead2;
   padding: 1rem;
 
   &__logo {
     width: 5rem;
+    @media (min-width: 768px) {
+      width: 10rem;
+    }
   }
 }
 
@@ -28,12 +31,13 @@
       border-radius: 1rem;
 
       &:hover {
-        background-color: rgb(218, 207, 5);
+        background-color: hsl(36.49deg 78.23% 51.37%);
       }
     }
 
     @media (min-width: 768px) {
       display: flex;
+      font-size: 1.6rem;
     }
   }
 }
