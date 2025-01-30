@@ -15,7 +15,7 @@
 }
 
 .nav {
-  &__burguer {
+  &__burger {
     width: 3rem;
     @media (min-width: 768px) {
       display: none;
@@ -38,6 +38,12 @@
     @media (min-width: 768px) {
       display: flex;
       font-size: 1.6rem;
+    }
+
+    &__burger {
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
 }
