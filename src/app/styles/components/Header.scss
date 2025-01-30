@@ -21,29 +21,4 @@
       display: none;
     }
   }
-
-  &__menu {
-    display: none;
-
-    &__link {
-      color: black;
-      padding: 0.5rem;
-      border-radius: 1rem;
-
-      &:hover {
-        background-color: hsl(36.49deg 78.23% 51.37%);
-      }
-    }
-
-    @media (min-width: 768px) {
-      display: flex;
-      font-size: 1.6rem;
-    }
-
-    &__burger {
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-  }
 }
