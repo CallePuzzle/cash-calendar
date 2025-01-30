@@ -12,6 +12,13 @@
 }
 
 .nav {
+  &__burguer {
+    width: 3rem;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   &__menu {
     display: none;
 
