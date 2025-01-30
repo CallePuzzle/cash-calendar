@@ -13,7 +13,7 @@
 
 .nav {
   &__menu {
-    display: flex;
+    display: none;
 
     &__link {
       color: black;
@@ -23,6 +23,10 @@
       &:hover {
         background-color: rgb(218, 207, 5);
       }
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
     }
   }
 }
