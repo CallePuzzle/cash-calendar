@@ -40,6 +40,19 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    &__icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
     &__contributors {
       display: flex;
       flex-direction: column;
@@ -47,7 +60,7 @@
       gap: 0.7rem;
       margin: 2rem;
 
-      & p {
+      p {
         color: black;
       }
     }

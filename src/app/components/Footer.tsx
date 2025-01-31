@@ -6,6 +6,8 @@ import arrow_up from "@/app/images/arrow_up.png";
 import logo from "@/app/images/logo_cash_calendar2.png";
 import git_hub from "@/app/images/github_icon.webp";
 import nuria from "@/app/images/Nuria_photo.png";
+import { Heart } from "lucide-react";
+import { Github } from "lucide-react";
 
 function Footer() {
   return (
@@ -16,14 +18,18 @@ function Footer() {
         </div>
       </Link>
       <div className="footer__content">
-        <Link
-          href={"https://github.com/CallePuzzle/cash-calendar"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image src={git_hub} alt="GitHub logo" className="w-6" />
-        </Link>
-
+        <div className="footer__content__icons">
+          <Link
+            href={"https://github.com/CallePuzzle/cash-calendar"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="w-6" />
+          </Link>
+          <p>
+            We <Heart className="w-4" /> code
+          </p>
+        </div>
         <div className="footer__content__contributors">
           <p>Contributors</p>
           <Image
@@ -32,7 +38,6 @@ function Footer() {
             className="w-10 rounded-full"
           />
           <p>&copy; Nuriant 🐜 2025</p>
-          <p>I 🖤 code</p>
         </div>
 
         <div className="footer__content__logo">
