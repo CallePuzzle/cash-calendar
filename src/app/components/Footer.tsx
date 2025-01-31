@@ -5,6 +5,7 @@ import Image from "next/image";
 import arrow_up from "@/app/images/arrow_up.png";
 import logo from "@/app/images/logo_cash_calendar2.png";
 import git_hub from "@/app/images/github_icon.webp";
+import nuria from "@/app/images/Nuria_photo.png";
 
 function Footer() {
   return (
@@ -23,7 +24,13 @@ function Footer() {
           <Image src={git_hub} alt="GitHub logo" className="w-6" />
         </Link>
 
-        <div className="footer__content__copy">
+        <div className="footer__content__contributors">
+          <p>Contributors</p>
+          <Image
+            src={nuria}
+            alt="image of Nuria"
+            className="w-10 rounded-full"
+          />
           <p>&copy; Nuriant 🐜 2025</p>
           <p>I 🖤 code</p>
         </div>
