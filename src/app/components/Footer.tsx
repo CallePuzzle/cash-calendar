@@ -33,16 +33,28 @@ function Footer() {
         <div className="footer__content__contributors">
           <p>Contributors</p>
           <div className="footer__content__contributors__img">
-            <Image
-              src={nuria}
-              alt="image of Nuria"
-              className="w-10 rounded-full"
-            />
-            <Image
-              src={cesar}
-              alt="image of Nuria"
-              className="w-10 rounded-full"
-            />
+            <Link
+              href={"https://github.com/Nuria8890"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={nuria}
+                alt="image of Nuria"
+                className="w-10 rounded-full"
+              />
+            </Link>
+            <Link
+              href={"https://github.com/jilgue"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={cesar}
+                alt="image of Nuria"
+                className="w-10 rounded-full"
+              />
+            </Link>
           </div>
         </div>
 
