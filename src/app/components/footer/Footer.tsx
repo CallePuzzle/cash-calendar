@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/Footer.scss";
+import "@/app/styles/components/Footer.scss";
 import Link from "next/link";
 import Image from "next/image";
 import arrow_up from "@/app/images/arrow_up.png";
