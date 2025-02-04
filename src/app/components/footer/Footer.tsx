@@ -4,10 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import arrow_up from "@/app/images/arrow_up.png";
 import logo from "@/app/images/logo_cash_calendar2.png";
-import nuria from "@/app/images/Nuria_photo.png";
-import cesar from "@/app/images/Cesar_photo.jpeg";
 import { Heart } from "lucide-react";
 import { Github } from "lucide-react";
+import Contributors from "./contributors";
 
 function Footer() {
   return (
@@ -30,34 +29,10 @@ function Footer() {
             We <Heart className="w-4" /> code
           </p>
         </div>
-        <div className="footer__content__contributors">
-          <p>Contributors</p>
-          <div className="footer__content__contributors__img">
-            <Link
-              href={"https://github.com/Nuria8890"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={nuria}
-                alt="image of Nuria"
-                className="w-10 rounded-full"
-              />
-            </Link>
-            <Link
-              href={"https://github.com/jilgue"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={cesar}
-                alt="image of Nuria"
-                className="w-10 rounded-full"
-              />
-            </Link>
-          </div>
+        {/* TODO: Añadir clase para que las fotos se coloquen en row */}
+        <div>
+          <Contributors />
         </div>
-
         <div className="footer__content__logo">
           <Image src={logo} alt="cash calendar logo" />
         </div>
