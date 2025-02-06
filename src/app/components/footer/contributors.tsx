@@ -2,7 +2,10 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+
 interface Contributor {
+  html_url: string;
   id: number;
   avatar_url: string;
   login: string;
@@ -31,12 +34,18 @@ function Contributors() {
       <ul>
         {contributors.map((contributor: Contributor) => (
           <li key={contributor.id}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={contributor.avatar_url}
-              alt={contributor.login}
-              className="w-10 rounded-full"
-            />
+            <Link
+              href={contributor.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={contributor.avatar_url}
+                alt={contributor.login}
+                className="w-10 rounded-full"
+              />
+            </Link>
           </li>
         ))}
       </ul>
