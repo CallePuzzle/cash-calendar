@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "@/app/images/logo_cash_calendar2.png";
 import burger from "@/app/images/burger_menu.png";
 import NavList from "@/app/components/header/NavList";
+import Link from "next/link";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,9 @@ function Header() {
     <>
       <header className="header">
         <div className="header__logo">
-          <Image src={logo} alt="cash calendar logo" />
+          <Link href={"/"}>
+            <Image src={logo} alt="cash calendar logo" />
+          </Link>
         </div>
         <nav className="nav">
           <div className="nav__burger">
