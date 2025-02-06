@@ -3,7 +3,7 @@ import Article from "@/app/home/article";
 
 function Section() {
   return (
-    <section>
+    <section className="md:w-1/2">
       <Article />
       <Article />
       <Article />
