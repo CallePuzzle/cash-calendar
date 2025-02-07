@@ -1,5 +1,6 @@
 .nav {
   &__menu {
+    display: none;
     &__burger {
       position: absolute;
       right: 0;
@@ -14,7 +15,6 @@
         display: none;
       }
     }
-    display: none;
 
     &__link {
       color: black;
