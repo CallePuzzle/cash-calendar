@@ -31,7 +31,7 @@ function Contributors() {
   return (
     <>
       <p>Contribuidores</p>
-      <ul>
+      <ul className="flex justify-center items-center gap-5">
         {contributors.map((contributor: Contributor) => (
           <li key={contributor.id}>
             <Link
