@@ -6,11 +6,12 @@
 
 .footer {
   min-width: 320px;
-  background-color: rgb(54, 141, 19);
+  background-color: rgb(147, 234, 210);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding-top: 1.2rem;
   position: relative;
 
   &__arrow {
@@ -33,25 +34,39 @@
       animation-direction: alternate;
       cursor: pointer;
     }
-
-    & i {
-      font-size: 1.5rem;
-      color: rgb(54, 141, 19);
-    }
   }
-
-  &__copy {
+  &__content {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 0.7rem;
-    margin: 2rem;
 
-    & p {
-      color: white;
-      & i {
-        color: greenyellow;
+    &__icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
       }
+    }
+
+    &__contributors {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+    }
+
+    &__logo {
+      width: 4rem;
     }
   }
 }
