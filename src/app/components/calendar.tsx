@@ -1,17 +1,20 @@
 "use client";
+import { useState } from "react";
 
-import * as React from "react";
-import { Calendar as CalendarUI } from "@/components/ui/calendar";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/style.css";
 
 export function Calendar() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
+  const [selected, setSelected] = useState<Date>();
 
   return (
-    <CalendarUI
+    <DayPicker
       mode="single"
-      selected={date}
-      onSelect={setDate}
-      className="rounded-md border shadow"
+      selected={selected}
+      onSelect={setSelected}
+      footer={
+        selected ? `Selected: ${selected.toLocaleDateString()}` : "Pick a day."
+      }
     />
   );
 }
