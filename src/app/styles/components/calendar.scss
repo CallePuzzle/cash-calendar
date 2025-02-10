@@ -1,5 +1,24 @@
 .rdp-root {
-  --rdp-accent-color: rgb(41, 130, 0); /* Change the accent color to indigo. */
-  --rdp-accent-background-color: #811313; /* Change the accent background color. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --rdp-today-color: rgb(35, 155, 144);
+  --rdp-accent-color: rgb(
+    35,
+    155,
+    144
+  ); /* Change the accent color to indigo. */
+  --rdp-accent-background-color: rgb(
+    129,
+    19,
+    19
+  ); /* Change the accent background color. */
   /* Add more CSS variables here. */
+  @media (min-width: 768px) {
+    --rdp-day-height: 80px;
+    --rdp-day-width: 80px;
+    --rdp-day_button-height: 78px;
+    --rdp-day_button-width: 78px;
+  }
 }
