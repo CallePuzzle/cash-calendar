@@ -14,7 +14,8 @@ export function Calendar() {
       classNames={{
         day: `${defaultClassNames.day} md:text-5xl`,
         weekdays: `${defaultClassNames.weekdays} md:text-5xl`,
-        caption_label: `${defaultClassNames.caption_label} md:text-3xl`,
+        caption_label: `${defaultClassNames.caption_label} md:text-4xl`,
+        footer: `${defaultClassNames.footer} md:text-3xl`,
       }}
       selected={selected}
       onSelect={setSelected}
