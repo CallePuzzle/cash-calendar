@@ -1,0 +1,57 @@
+.rdp-root {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+
+  --rdp-today-color: rgb(35, 155, 144);
+  --rdp-accent-color: rgb(35, 155, 144);
+
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+    margin-left: 3rem;
+  }
+}
+
+.rdp-months {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 35rem;
+
+  @media (min-width: 768px) {
+    height: 50rem;
+    width: 50rem;
+  }
+  @media (min-width: 1024px) {
+    height: 38rem;
+    width: 40rem;
+  }
+}
+
+.rdp-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 30rem;
+  @media (min-width: 768px) {
+    height: 45rem;
+    width: 45rem;
+  }
+  @media (min-width: 1024px) {
+    height: 35rem;
+    width: 35rem;
+  }
+  &_grid {
+    @media (min-width: 768px) {
+      height: 40rem;
+      width: 40rem;
+    }
+    @media (min-width: 1024px) {
+      height: 30rem;
+      width: 30rem;
+    }
+  }
+}
