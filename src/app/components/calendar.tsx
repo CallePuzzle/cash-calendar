@@ -1,22 +1,21 @@
 "use client";
 import { useState } from "react";
 
-import { DayPicker } from "react-day-picker";
+import { DayPicker, getDefaultClassNames } from "react-day-picker";
 import "react-day-picker/style.css";
 import "@/app/styles/components/calendar.scss";
 
 export function Calendar() {
   const [selected, setSelected] = useState<Date>();
-  // const defaultClassNames = getDefaultClassNames();
+  const defaultClassNames = getDefaultClassNames();
   return (
     <DayPicker
       mode="single"
-      // classNames={{
-      //   today: `border-red-500`, // Add a border to today's date
-      //   selected: `bg-red-500 border-amber-500 text-white`, // Highlight the selected day
-      //   root: `${defaultClassNames.root} shadow-lg p-5`, // Add a shadow to the root element
-      //   chevron: `${defaultClassNames.chevron} fill-amber-500`, // Change the color of the chevron
-      // }}
+      classNames={{
+        day: `${defaultClassNames.day} md:text-5xl`,
+        weekdays: `${defaultClassNames.weekdays} md:text-5xl`,
+        caption_label: `${defaultClassNames.caption_label} md:text-3xl`,
+      }}
       selected={selected}
       onSelect={setSelected}
       footer={

@@ -16,9 +16,11 @@
   ); /* Change the accent background color. */
   /* Add more CSS variables here. */
   @media (min-width: 768px) {
-    --rdp-day-height: 80px;
-    --rdp-day-width: 80px;
-    --rdp-day_button-height: 78px;
-    --rdp-day_button-width: 78px;
+    --rdp-day-height: 50px;
+    --rdp-day-width: 50px;
+    --rdp-day_button-height: 48px;
+    --rdp-day_button-width: 48px;
+    align-items: flex-start;
+    padding-left: 30px;
   }
 }
