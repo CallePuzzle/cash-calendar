@@ -1,26 +1,34 @@
 .rdp-root {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 3rem;
   align-items: center;
+
   --rdp-today-color: rgb(35, 155, 144);
-  --rdp-accent-color: rgb(
-    35,
-    155,
-    144
-  ); /* Change the accent color to indigo. */
-  --rdp-accent-background-color: rgb(
-    129,
-    19,
-    19
-  ); /* Change the accent background color. */
-  /* Add more CSS variables here. */
-  @media (min-width: 768px) {
-    --rdp-day-height: 50px;
-    --rdp-day-width: 50px;
-    --rdp-day_button-height: 48px;
-    --rdp-day_button-width: 48px;
-    align-items: flex-start;
-    padding-left: 30px;
-  }
+  --rdp-accent-color: rgb(35, 155, 144);
+
+  // @media (min-width: 768px) {
+  //   --rdp-day-height: 50px;
+  //   --rdp-day-width: 50px;
+  //   --rdp-day_button-height: 48px;
+  //   --rdp-day_button-width: 48px;
+  //   align-items: flex-start;
+  //   padding-left: 30px;
+  // }
+}
+
+.rdp-months {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 35rem;
+}
+
+.rdp-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 30rem;
 }
