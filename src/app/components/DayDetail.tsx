@@ -47,7 +47,7 @@ function DayDetail({ daySelected }: { daySelected: string }) {
   });
 
   return (
-    <ul>
+    <ul className="mb-6 ml:mb-0">
       <p>Día seleccionado: {daySelected}</p>
       {expensesElement}
     </ul>
