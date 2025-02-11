@@ -3,9 +3,9 @@ import DayDetail from "./components/DayDetail";
 
 export default function Index() {
   return (
-    <section className="flex flex-col items-center justify-around lg:flex-row">
+    <section className="min-w-320 flex flex-col items-center justify-around lg:flex-row">
       <Calendar />
-      <DayDetail />
+      <DayDetail daySelected="11/2/2025" />
     </section>
   );
 }
