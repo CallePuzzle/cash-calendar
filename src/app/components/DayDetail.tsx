@@ -39,16 +39,31 @@ function getDayDetails(day: string) {
   }
   return [];
 }
+function getSelectedDayToString(selectedDate: Date | undefined) {
+  if (selectedDate) {
+    const dayStringyfied = selectedDate.getDate();
 
-function DayDetail({ daySelected }: { daySelected: string }) {
-  const expenses = getDayDetails(daySelected);
+    const monthStringyfied = selectedDate.getMonth() + 1;
+
+    const yearStringyfied = selectedDate.getFullYear();
+
+    return `${dayStringyfied}/${monthStringyfied}/${yearStringyfied}`;
+  } else {
+    return "";
+  }
+}
+
+function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
+  const selectedDayToString = getSelectedDayToString(selectedDay);
+
+  const expenses = getDayDetails(selectedDayToString);
   const expensesElement = expenses.map((expense) => {
     return <Detail key={expense.id} expense={expense} />;
   });
 
   return (
     <ul className="mb-6 ml:mb-0">
-      <p>Día seleccionado: {daySelected}</p>
+      <p>Día seleccionado: {selectedDayToString}</p>
       {expensesElement}
     </ul>
   );
