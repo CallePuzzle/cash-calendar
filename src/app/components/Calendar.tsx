@@ -23,9 +23,6 @@ export function Calendar({
       }}
       selected={selected}
       onSelect={setSelected}
-      footer={
-        selected ? `Selected: ${selected.toLocaleDateString()}` : "Pick a day."
-      }
     />
   );
 }
