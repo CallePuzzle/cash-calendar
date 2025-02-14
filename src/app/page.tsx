@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { Calendar } from "@/app/components/Calendar";
-import DayDetail from "./components/DayDetail";
+import { Calendar } from "@/app/components/index/Calendar";
+import DayDetail from "@/app/components/index/DayDetail";
 
 export default function Index() {
   const [selectedDay, setSelectedDay] = useState<Date>();

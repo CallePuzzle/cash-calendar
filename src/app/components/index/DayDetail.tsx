@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Detail from "@/app/components/Detail";
+import Detail from "@/app/components/index/Detail";
 
 function getDayDetails(day: string) {
   const dailyExpenses = {
