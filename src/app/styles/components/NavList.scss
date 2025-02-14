@@ -3,6 +3,7 @@
     display: none;
     &__burger {
       position: absolute;
+      z-index: 1;
       right: 0;
       top: 5.2rem;
       background-color: rgb(147, 234, 210);
