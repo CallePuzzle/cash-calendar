@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div>soy el componente archivo</div>;
+  return (
+    <div>
+      <h1>Soy DEMO</h1>
+    </div>
+  );
 }
