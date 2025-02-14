@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div>soy archivo en demo</div>;
+  return (
+    <div>
+      <h1>Soy DEMO</h1>
+    </div>
+  );
 }
