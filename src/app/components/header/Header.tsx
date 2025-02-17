@@ -30,7 +30,7 @@ function Header() {
             <Image src={burger} alt="burger menu" onClick={handleOpenClose} />
           </div>
           {open && <NavList isBurgerNav={true} />}
-          <NavList isBurgerNav={false} />
+          <NavList isBurgerNav={false} setOpen={setOpen} />
         </nav>
       </header>
     </>
