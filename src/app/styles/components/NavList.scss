@@ -2,6 +2,9 @@
   &__menu {
     display: none;
     &__burger {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
       position: absolute;
       z-index: 1;
       right: 0;
