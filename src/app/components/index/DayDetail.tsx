@@ -10,12 +10,14 @@ function getDayDetails(day: string) {
         name: "cañas",
         quantity: 15,
         categoria: "bares y restaurantes",
+        color: "rgb(17, 115, 46)",
       },
       {
         id: 2,
         name: "camiseta",
         quantity: 20,
         categoria: "ropa",
+        color: "rgb(210, 105, 201)",
       },
     ],
     "4/2/2025": [
@@ -24,12 +26,14 @@ function getDayDetails(day: string) {
         name: "comida",
         quantity: 50,
         categoria: "bares y restaurantes",
+        color: "rgb(17, 115, 46)",
       },
       {
         id: 4,
         name: "pantalon",
         quantity: 35,
         categoria: "ropa",
+        color: "rgb(210, 105, 201)",
       },
     ],
   };
