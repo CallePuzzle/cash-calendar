@@ -20,7 +20,6 @@ function Contributors() {
         "https://api.github.com/repos/callepuzzle/cash-calendar/contributors"
       );
       const data = await res.json();
-      console.log("data: ", data);
       setContributors(data);
     }
     fetchContributors();

@@ -1,13 +1,17 @@
-"use client";
-import { useState } from "react";
-
 import { DayPicker, getDefaultClassNames } from "react-day-picker";
 import "react-day-picker/style.css";
 import "@/app/styles/components/calendar.scss";
 
-export function Calendar() {
-  const [selected, setSelected] = useState<Date>();
+export function Calendar({
+  selected,
+  setSelected,
+}: {
+  selected: Date | undefined;
+
+  setSelected: (date: Date | undefined) => void;
+}) {
   const defaultClassNames = getDefaultClassNames();
+
   return (
     <DayPicker
       mode="single"
@@ -19,9 +23,6 @@ export function Calendar() {
       }}
       selected={selected}
       onSelect={setSelected}
-      footer={
-        selected ? `Selected: ${selected.toLocaleDateString()}` : "Pick a day."
-      }
     />
   );
 }
