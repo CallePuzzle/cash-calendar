@@ -36,6 +36,29 @@ function getDayDetails(day: string) {
         color: "#d269c9",
       },
     ],
+    "20/2/2025": [
+      {
+        id: 5,
+        name: "brookling",
+        quantity: 64,
+        category: "deporte",
+        color: "#f1a009",
+      },
+      {
+        id: 6,
+        name: "medicamentos",
+        quantity: 57.48,
+        category: "farmacia",
+        color: "#0bc90b",
+      },
+      {
+        id: 7,
+        name: "gasolina",
+        quantity: 38.93,
+        category: "vehículo",
+        color: "#ff2828",
+      },
+    ],
   };
 
   if (day in dailyExpenses) {
