@@ -66,7 +66,7 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
     return <Detail key={expense.id} expense={expense} />;
   });
   return (
-    <ul className="mb-6 ml:mb-0">
+    <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center">
       {selectedDay
         ? `Día seleccionado: ${selectedDayToString}`
         : "Selecciona un día"}
