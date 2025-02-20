@@ -10,14 +10,14 @@ function getDayDetails(day: string) {
         name: "cañas",
         quantity: 15,
         categoria: "bares y restaurantes",
-        color: "rgb(17, 115, 46)",
+        color: "#11732e",
       },
       {
         id: 2,
         name: "camiseta",
         quantity: 20,
         categoria: "ropa",
-        color: "rgb(210, 105, 201)",
+        color: "#d269c9",
       },
     ],
     "4/2/2025": [
@@ -26,14 +26,14 @@ function getDayDetails(day: string) {
         name: "comida",
         quantity: 50,
         categoria: "bares y restaurantes",
-        color: "rgb(17, 115, 46)",
+        color: "#11732e",
       },
       {
         id: 4,
         name: "pantalon",
         quantity: 35,
         categoria: "ropa",
-        color: "rgb(210, 105, 201)",
+        color: "#d269c9",
       },
     ],
   };
@@ -67,15 +67,22 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
   });
   return (
     <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center">
-      {selectedDay
-        ? `Día seleccionado: ${selectedDayToString}`
-        : "Selecciona un día"}
+      {selectedDay ? (
+        <p className="bg-gray-300 m-px p-2 rounded-lg">
+          Día seleccionado: {selectedDayToString}
+        </p>
+      ) : (
+        <p className="bg-gray-300 m-px p-2 rounded-lg">Selecciona un día</p>
+      )}
       {expensesElement}
-      <p>
-        {selectedDayToString && expensesElement.length === 0
-          ? "Hoy no he generado ningún gasto"
-          : ""}
-      </p>
+
+      {selectedDayToString && expensesElement.length === 0 ? (
+        <p className="bg-blue-300 m-px p-2 rounded-lg">
+          Hoy no he generado ningún gasto{" "}
+        </p>
+      ) : (
+        ""
+      )}
     </ul>
   );
 }
