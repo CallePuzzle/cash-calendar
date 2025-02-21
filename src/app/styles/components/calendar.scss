@@ -23,10 +23,6 @@
     height: 50rem;
     width: 50rem;
   }
-  @media (min-width: 1024px) {
-    height: 38rem;
-    width: 40rem;
-  }
 }
 
 .rdp-month {
@@ -35,22 +31,16 @@
   align-items: center;
   justify-content: space-between;
   height: 30rem;
+  gap: 5rem;
   @media (min-width: 768px) {
     height: 45rem;
     width: 45rem;
   }
-  @media (min-width: 1024px) {
-    height: 35rem;
-    width: 35rem;
-  }
+
   &_grid {
     @media (min-width: 768px) {
       height: 40rem;
       width: 40rem;
-    }
-    @media (min-width: 1024px) {
-      height: 30rem;
-      width: 30rem;
     }
   }
 }
@@ -62,7 +52,7 @@
 }
 button.rdp-day_button {
   @media (min-width: 768px) {
-    width: 60px;
-    height: 60px;
+    width: 6rem;
+    height: 6rem;
   }
 }
