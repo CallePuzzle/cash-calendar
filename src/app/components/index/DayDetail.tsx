@@ -58,6 +58,48 @@ function getDayDetails(day: string) {
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
       },
+      {
+        id: 8,
+        name: "brookling",
+        quantity: 64,
+        category: "deporte",
+        bgColorClass: "bg-[#f1a009]",
+      },
+      {
+        id: 9,
+        name: "medicamentos",
+        quantity: 57.48,
+        category: "farmacia",
+        bgColorClass: "bg-[#0bc90b]",
+      },
+      {
+        id: 10,
+        name: "gasolina",
+        quantity: 38.93,
+        category: "vehículo",
+        bgColorClass: "bg-[#ff2828]",
+      },
+      {
+        id: 11,
+        name: "brookling",
+        quantity: 64,
+        category: "deporte",
+        bgColorClass: "bg-[#f1a009]",
+      },
+      {
+        id: 12,
+        name: "medicamentos",
+        quantity: 57.48,
+        category: "farmacia",
+        bgColorClass: "bg-[#0bc90b]",
+      },
+      {
+        id: 13,
+        name: "gasolina",
+        quantity: 38.93,
+        category: "vehículo",
+        bgColorClass: "bg-[#ff2828]",
+      },
     ],
   };
 
