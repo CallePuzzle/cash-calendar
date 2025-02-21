@@ -133,7 +133,7 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
   return (
     <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center pt-8 pb-8">
       {selectedDay ? (
-        <li className="bg-gray-300 m-px p-2 rounded-lg font-semibold w-[60%] text-center md:w-[50%] md:text-lg lg:w-[70%]">
+        <li className="bg-gray-300 m-px p-2 rounded-lg font-semibold text-2xl w-[60%] text-center md:w-[50%] lg:w-[70%]">
           Día seleccionado: {selectedDayToString}
         </li>
       ) : (

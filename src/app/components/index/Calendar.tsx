@@ -11,7 +11,6 @@ export function Calendar({
   setSelected: (date: Date | undefined) => void;
 }) {
   const defaultClassNames = getDefaultClassNames();
-
   return (
     <DayPicker
       mode="single"

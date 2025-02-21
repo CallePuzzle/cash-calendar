@@ -12,7 +12,6 @@
     margin-left: 3rem;
   }
 }
-
 .rdp-months {
   display: flex;
   flex-direction: column;
@@ -53,5 +52,17 @@
       height: 30rem;
       width: 30rem;
     }
+  }
+}
+
+.rdp-selected {
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+button.rdp-day_button {
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
   }
 }
