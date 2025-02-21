@@ -9,13 +9,16 @@ interface Expense {
 
 function Detail({ expense }: { expense: Expense }) {
   return (
-    <li
-      className={`${expense.bgColorClass} m-px p-3 rounded-lg flex flex-row gap-10 justify-between font-semibold w-[60%] md:w-[50%] md:text-lg lg:w-[70%]`}
-    >
-      <p>
-        {expense.quantity}€ en {expense.name}
-      </p>
-      <p>{expense.category}</p>
+    <li className="flex flex-row w-[80%] md:w-[50%] lg:w-[70%] bg-blue-200 justify-between">
+      <div className="flex items-center justify-center w-[20%]">Icono</div>
+      <div
+        className={`${expense.bgColorClass} m-px p-3 rounded-lg flex flex-row gap-10 justify-between font-semibold w-[80%] md:text-lg`}
+      >
+        <p>
+          {expense.quantity}€ en {expense.name}
+        </p>
+        <p>{expense.category}</p>
+      </div>
     </li>
   );
 }
