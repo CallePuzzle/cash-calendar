@@ -1,12 +1,12 @@
 import React from "react";
-import { DynamicIcon } from "lucide-react/dynamic";
+import { DynamicIcon, type IconName } from "lucide-react/dynamic";
 
 interface Expense {
   name: string;
   quantity: number;
   bgColorClass: string;
   category: string;
-  image: string;
+  image: IconName;
 }
 
 function Detail({ expense }: { expense: Expense }) {

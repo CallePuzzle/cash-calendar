@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Detail from "@/app/components/index/Detail";
+import type { IconName } from "lucide-react/dynamic";
 
 function getDayDetails(day: string) {
   const dailyExpenses = {
@@ -11,7 +12,7 @@ function getDayDetails(day: string) {
         quantity: 15,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
-        image: "dumbbell",
+        image: "dumbbell" as IconName,
       },
       {
         id: 2,
