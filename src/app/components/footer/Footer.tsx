@@ -2,9 +2,9 @@ import React from "react";
 import "@/app/styles/components/Footer.scss";
 import Link from "next/link";
 import Image from "next/image";
-import arrow_up from "@/app/images/arrow_up.png";
 import logo from "@/app/images/logo_cash_calendar2.png";
-import { Heart } from "lucide-react";
+import { ArrowUp } from "lucide-react";
+import { HeartPulse } from "lucide-react";
 import { Github } from "lucide-react";
 import Contributors from "./contributors";
 
@@ -13,7 +13,7 @@ function Footer() {
     <footer className="footer">
       <Link href="#header">
         <div className="footer__arrow">
-          <Image src={arrow_up} alt="arrow up" className="w-6" />
+          <ArrowUp color="black" size={20} />
         </div>
       </Link>
       <div className="footer__content">
@@ -23,13 +23,12 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github className="w-6" />
+            <Github color="black" size={16} />
           </Link>
           <p>
-            We <Heart className="w-4" /> code
+            We <HeartPulse color="red" size={12} /> code
           </p>
         </div>
-        {/* TODO: Añadir clase para que las fotos se coloquen en row */}
         <div>
           <Contributors />
         </div>
