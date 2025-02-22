@@ -9,13 +9,15 @@ function getDayDetails(day: string) {
         id: 1,
         name: "cañas",
         quantity: 15,
-        categoria: "bares y restaurantes",
+        category: "bares y restaurantes",
+        bgColorClass: "bg-[#11732e]",
       },
       {
         id: 2,
         name: "camiseta",
         quantity: 20,
-        categoria: "ropa",
+        category: "ropa",
+        bgColorClass: "bg-[#d269c9]",
       },
     ],
     "4/2/2025": [
@@ -23,13 +25,80 @@ function getDayDetails(day: string) {
         id: 3,
         name: "comida",
         quantity: 50,
-        categoria: "bares y restaurantes",
+        category: "bares y restaurantes",
+        bgColorClass: "bg-[#11732e]",
       },
       {
         id: 4,
         name: "pantalon",
         quantity: 35,
-        categoria: "ropa",
+        category: "ropa",
+        bgColorClass: "bg-[#d269c9]",
+      },
+    ],
+    "20/2/2025": [
+      {
+        id: 5,
+        name: "brookling",
+        quantity: 64,
+        category: "deporte",
+        bgColorClass: "bg-[#f1a009]",
+      },
+      {
+        id: 6,
+        name: "medicamentos",
+        quantity: 57.48,
+        category: "farmacia",
+        bgColorClass: "bg-[#0bc90b]",
+      },
+      {
+        id: 7,
+        name: "gasolina",
+        quantity: 38.93,
+        category: "vehículo",
+        bgColorClass: "bg-[#ff2828]",
+      },
+      {
+        id: 8,
+        name: "brookling",
+        quantity: 64,
+        category: "deporte",
+        bgColorClass: "bg-[#f1a009]",
+      },
+      {
+        id: 9,
+        name: "medicamentos",
+        quantity: 57.48,
+        category: "farmacia",
+        bgColorClass: "bg-[#0bc90b]",
+      },
+      {
+        id: 10,
+        name: "gasolina",
+        quantity: 38.93,
+        category: "vehículo",
+        bgColorClass: "bg-[#ff2828]",
+      },
+      {
+        id: 11,
+        name: "brookling",
+        quantity: 64,
+        category: "deporte",
+        bgColorClass: "bg-[#f1a009]",
+      },
+      {
+        id: 12,
+        name: "medicamentos",
+        quantity: 57.48,
+        category: "farmacia",
+        bgColorClass: "bg-[#0bc90b]",
+      },
+      {
+        id: 13,
+        name: "gasolina",
+        quantity: 38.93,
+        category: "vehículo",
+        bgColorClass: "bg-[#ff2828]",
       },
     ],
   };
@@ -62,16 +131,25 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
     return <Detail key={expense.id} expense={expense} />;
   });
   return (
-    <ul className="mb-6 ml:mb-0">
-      {selectedDay
-        ? `Día seleccionado: ${selectedDayToString}`
-        : "Selecciona un día"}
+    <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center pt-8 pb-8">
+      {selectedDay ? (
+        <li className="bg-gray-300 m-px p-2 rounded-lg font-semibold text-2xl w-[80%] text-center md:w-[50%] lg:w-[70%]">
+          Día seleccionado: {selectedDayToString}
+        </li>
+      ) : (
+        <li className="bg-gray-300 m-px p-2 rounded-lg font-semibold w-[80%] text-center md:w-[50%] md:text-lg lg:w-[70%]">
+          Selecciona un día
+        </li>
+      )}
       {expensesElement}
-      <p>
-        {selectedDayToString && expensesElement.length === 0
-          ? "Hoy no he generado ningún gasto"
-          : ""}
-      </p>
+
+      {selectedDayToString && expensesElement.length === 0 ? (
+        <li className="bg-blue-300 m-px p-2 rounded-lg font-semibold w-[80%] text-center md:w-[50%] md:text-lg lg:w-[70%]">
+          Hoy no he generado ningún gasto
+        </li>
+      ) : (
+        ""
+      )}
     </ul>
   );
 }
