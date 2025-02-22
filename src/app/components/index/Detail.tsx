@@ -11,15 +11,15 @@ interface Expense {
 
 function Detail({ expense }: { expense: Expense }) {
   return (
-    <li className="flex flex-row w-[80%] md:w-[50%] lg:w-[70%] bg-blue-200 justify-between">
+    <li className="flex flex-row w-[80%] md:w-[50%] lg:w-[70%] justify-start">
       <div className="flex items-center justify-center w-[20%]">
-        <DynamicIcon name={expense.image} color="red" size={48} />
+        <DynamicIcon name={expense.image} color="black" size={20} />
       </div>
       <div
-        className={`${expense.bgColorClass} m-px p-3 rounded-lg flex flex-row gap-10 justify-between font-semibold w-[80%] md:text-lg`}
+        className={`${expense.bgColorClass} m-px p-3 rounded-lg flex flex-row gap-10 justify-between w-[80%] md:text-lg`}
       >
         <p>
-          {expense.quantity}€ en {expense.name}
+          <b>{expense.quantity}€</b> en {expense.name}
         </p>
         <p>{expense.category}</p>
       </div>

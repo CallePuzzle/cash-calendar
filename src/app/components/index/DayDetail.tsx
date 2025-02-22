@@ -12,7 +12,7 @@ function getDayDetails(day: string) {
         quantity: 15,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
-        image: "dumbbell" as IconName,
+        image: "utensils" as IconName,
       },
       {
         id: 2,
@@ -20,7 +20,7 @@ function getDayDetails(day: string) {
         quantity: 20,
         category: "ropa",
         bgColorClass: "bg-[#d269c9]",
-        image: "camera",
+        image: "shirt" as IconName,
       },
     ],
     "4/2/2025": [
@@ -30,7 +30,7 @@ function getDayDetails(day: string) {
         quantity: 50,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
-        image: "dumbbell",
+        image: "utensils" as IconName,
       },
       {
         id: 4,
@@ -38,7 +38,7 @@ function getDayDetails(day: string) {
         quantity: 35,
         category: "ropa",
         bgColorClass: "bg-[#d269c9]",
-        image: "dumbbell",
+        image: "shirt" as IconName,
       },
     ],
     "20/2/2025": [
@@ -48,7 +48,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
-        image: "dumbbell",
+        image: "biceps-flexed" as IconName,
       },
       {
         id: 6,
@@ -56,7 +56,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
-        image: "dumbbell",
+        image: "pill" as IconName,
       },
       {
         id: 7,
@@ -64,7 +64,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
-        image: "dumbbell",
+        image: "car-front" as IconName,
       },
       {
         id: 8,
@@ -72,7 +72,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
-        image: "dumbbell",
+        image: "biceps-flexed" as IconName,
       },
       {
         id: 9,
@@ -80,7 +80,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
-        image: "dumbbell",
+        image: "pill" as IconName,
       },
       {
         id: 10,
@@ -88,7 +88,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
-        image: "dumbbell",
+        image: "car-front" as IconName,
       },
       {
         id: 11,
@@ -96,7 +96,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
-        image: "dumbbell",
+        image: "biceps-flexed" as IconName,
       },
       {
         id: 12,
@@ -104,7 +104,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
-        image: "dumbbell",
+        image: "pill" as IconName,
       },
       {
         id: 13,
@@ -112,7 +112,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
-        image: "dumbbell",
+        image: "car-front" as IconName,
       },
     ],
   };
@@ -144,23 +144,20 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
   const expensesElement = expenses.map((expense) => {
     return <Detail key={expense.id} expense={expense} />;
   });
+
+  const liClassName =
+    "bg-gray-300 m-px p-2 rounded-lg font-semibold text-2xl w-[80%] text-center md:w-[50%] lg:w-[70%]";
   return (
     <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center pt-8 pb-8">
       {selectedDay ? (
-        <li className="bg-gray-300 m-px p-2 rounded-lg font-semibold text-2xl w-[80%] text-center md:w-[50%] lg:w-[70%]">
-          Día seleccionado: {selectedDayToString}
-        </li>
+        <li className={liClassName}>Día seleccionado: {selectedDayToString}</li>
       ) : (
-        <li className="bg-gray-300 m-px p-2 rounded-lg font-semibold w-[80%] text-center md:w-[50%] md:text-lg lg:w-[70%]">
-          Selecciona un día
-        </li>
+        <li className={liClassName}>Selecciona un día</li>
       )}
       {expensesElement}
 
       {selectedDayToString && expensesElement.length === 0 ? (
-        <li className="bg-blue-300 m-px p-2 rounded-lg font-semibold w-[80%] text-center md:w-[50%] md:text-lg lg:w-[70%]">
-          Hoy no he generado ningún gasto
-        </li>
+        <li className={liClassName}>Hoy no he generado ningún gasto</li>
       ) : (
         ""
       )}
