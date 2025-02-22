@@ -11,6 +11,7 @@ function getDayDetails(day: string) {
         quantity: 15,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
+        image: "dumbbell",
       },
       {
         id: 2,
@@ -18,6 +19,7 @@ function getDayDetails(day: string) {
         quantity: 20,
         category: "ropa",
         bgColorClass: "bg-[#d269c9]",
+        image: "camera",
       },
     ],
     "4/2/2025": [
@@ -27,6 +29,7 @@ function getDayDetails(day: string) {
         quantity: 50,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
+        image: "dumbbell",
       },
       {
         id: 4,
@@ -34,6 +37,7 @@ function getDayDetails(day: string) {
         quantity: 35,
         category: "ropa",
         bgColorClass: "bg-[#d269c9]",
+        image: "dumbbell",
       },
     ],
     "20/2/2025": [
@@ -43,6 +47,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
+        image: "dumbbell",
       },
       {
         id: 6,
@@ -50,6 +55,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
+        image: "dumbbell",
       },
       {
         id: 7,
@@ -57,6 +63,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
+        image: "dumbbell",
       },
       {
         id: 8,
@@ -64,6 +71,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
+        image: "dumbbell",
       },
       {
         id: 9,
@@ -71,6 +79,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
+        image: "dumbbell",
       },
       {
         id: 10,
@@ -78,6 +87,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
+        image: "dumbbell",
       },
       {
         id: 11,
@@ -85,6 +95,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
+        image: "dumbbell",
       },
       {
         id: 12,
@@ -92,6 +103,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
+        image: "dumbbell",
       },
       {
         id: 13,
@@ -99,6 +111,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
+        image: "dumbbell",
       },
     ],
   };
