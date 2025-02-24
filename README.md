@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cash Calendar
+
+Cash Calendar is a simple web application designed to help you track your expenses and income efficiently. It is built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
+This project uses pnpm as the package manager. To install pnpm, run the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install -g pnpm
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Alternatively, you can follow the installation instructions on the [official website](https://pnpm.io/installation).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Once pnpm is installed, you can install the project dependencies by running:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm install
+```
 
-## Learn More
+To start the development server, use the following command:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev
+```
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project is deployed on Vercel. However, since Vercel's free plan does not support GitHub organizations, the deployment is managed through a secondary repository hosted on GitLab.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deployment Instructions
+
+- Add the Gitlab remote repository:
+
+```bash
+git remote add gitlab git@gitlab.com:jilgue/cash-calendar.git
+```
+
+- Push the changes to Gitlab:
+
+```bash
+git push gitlab main
+```
