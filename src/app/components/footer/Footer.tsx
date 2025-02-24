@@ -26,7 +26,7 @@ function Footer() {
             <Github color="black" size={16} />
           </Link>
           <p>
-            We <HeartPulse color="red" size={12} /> code
+            We <HeartPulse color="red" size={12} className="ml-1 mr-1" /> code
           </p>
         </div>
         <div>
