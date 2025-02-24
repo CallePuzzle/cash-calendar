@@ -29,7 +29,7 @@ function Contributors() {
 
   return (
     <>
-      <p>Contribuidores</p>
+      <p className="p-2">Contributors</p>
       <ul className="flex justify-center items-center gap-5">
         {contributors.map((contributor: Contributor) => (
           <li key={contributor.id}>

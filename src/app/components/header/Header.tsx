@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "@/app/styles/components/Header.scss";
 import Image from "next/image";
 import logo from "@/app/images/logo_cash_calendar2.png";
-import burger from "@/app/images/burger_menu.png";
+import { Logs } from "lucide-react";
 import NavList from "@/app/components/header/NavList";
 import Link from "next/link";
 
@@ -27,9 +27,9 @@ function Header() {
         </div>
         <nav className="nav">
           <div className="nav__burger">
-            <Image src={burger} alt="burger menu" onClick={handleOpenClose} />
+            <Logs color="black" size={25} onClick={handleOpenClose} />
           </div>
-          {open && <NavList isBurgerNav={true} />}
+          {open && <NavList isBurgerNav={true} setOpen={setOpen} />}
           <NavList isBurgerNav={false} setOpen={setOpen} />
         </nav>
       </header>

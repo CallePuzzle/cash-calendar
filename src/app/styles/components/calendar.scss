@@ -6,11 +6,6 @@
 
   --rdp-today-color: rgb(35, 155, 144);
   --rdp-accent-color: rgb(35, 155, 144);
-
-  @media (min-width: 1024px) {
-    align-items: flex-start;
-    margin-left: 3rem;
-  }
 }
 .rdp-months {
   display: flex;
