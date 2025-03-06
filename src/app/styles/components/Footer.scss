@@ -24,7 +24,7 @@
     border-radius: 50%;
     position: absolute;
     top: -1.7rem;
-    margin-left: -1.5rem;
+    margin-left: -1rem;
 
     &:hover {
       animation-name: arrowUp;
@@ -71,4 +71,10 @@
       width: 4rem;
     }
   }
+}
+
+.animate__heartBeat {
+  --animate-duration: 3s;
+  --animate-delay: 1s;
+  animation-iteration-count: infinite;
 }

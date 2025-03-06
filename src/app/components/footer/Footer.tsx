@@ -7,6 +7,7 @@ import { ArrowUp } from "lucide-react";
 import { HeartPulse } from "lucide-react";
 import { Github } from "lucide-react";
 import Contributors from "./contributors";
+import "animate.css";
 
 function Footer() {
   return (
@@ -26,7 +27,13 @@ function Footer() {
             <Github color="black" size={16} />
           </Link>
           <p>
-            We <HeartPulse color="red" size={12} className="ml-1 mr-1" /> code
+            We{" "}
+            <HeartPulse
+              color="red"
+              size={12}
+              className="ml-1 mr-1 animate__heartBeat"
+            />{" "}
+            code
           </p>
         </div>
         <div>
