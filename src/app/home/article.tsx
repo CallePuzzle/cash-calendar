@@ -1,17 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import logo from "@/app/images/logo_cash_calendar2.png";
-function Article() {
+import { ReactNode } from "react";
+
+interface Props {
+  title: ReactNode;
+  content: ReactNode;
+}
+
+function Article({ title, content }: Props) {
   return (
     <article className="flex flex-col mb-5 border md:flex-wrap gap-2 p-3">
       <Image src={logo} alt="image" className="w-12"></Image>
-      <h1 className="text-xl font-bold">Título del artículo 1</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        velit? Quam est illum itaque hic amet similique quisquam saepe ratione
-        tempore laboriosam, aut odit mollitia doloremque. Magni aut maxime
-        quisquam!
-      </p>
+      <h1 className="text-xl font-bold">{title}</h1>
+      <p>{content}</p>
     </article>
   );
 }
