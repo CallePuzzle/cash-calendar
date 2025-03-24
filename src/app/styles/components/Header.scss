@@ -1,11 +1,12 @@
 .header {
+  width: 100vw;
   min-width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #93ead2;
   padding: 1rem;
-
+  position: fixed;
   &__logo {
     width: 5rem;
     @media (min-width: 768px) {
