@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+
 import "@/app/styles/components/Header.scss";
 import Image from "next/image";
 import logo from "@/app/images/logo_cash_calendar2.png";
@@ -7,8 +7,13 @@ import { Logs } from "lucide-react";
 import NavList from "@/app/components/header/NavList";
 import Link from "next/link";
 
-function Header() {
-  const [open, setOpen] = useState(false);
+function Header({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: (value: boolean) => void;
+}) {
   const handleOpenClose = () => {
     if (open === false) {
       setOpen(true);
