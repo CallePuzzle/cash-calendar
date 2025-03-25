@@ -24,7 +24,7 @@ function Header({
 
   return (
     <>
-      <header className="header">
+      <header className="header" id="header">
         <div className="header__logo">
           <Link href={"/"}>
             <Image src={logo} alt="cash calendar logo" />
