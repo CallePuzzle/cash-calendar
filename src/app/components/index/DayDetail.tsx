@@ -161,7 +161,7 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
   const liClassName =
     "bg-gray-300 m-px p-2 rounded-lg font-semibold text-2xl w-[80%] text-center md:w-[50%] lg:w-[70%]";
   return (
-    <div className="h-full w-full mt-8">
+    <div className="h-full w-full">
       <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center pt-8 pb-8">
         {selectedDay ? (
           <li className={liClassName}>
