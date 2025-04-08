@@ -24,15 +24,15 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Github color="black" size={16} />
+            <Github color="black" className="mr-3" size={16} />
           </Link>
           <p>
-            We{" "}
+            We
             <HeartPulse
               color="red"
               size={12}
-              className="ml-1 mr-1 animate__heartBeat"
-            />{" "}
+              className="mx-2 animate__heartBeat"
+            />
             code
           </p>
         </div>
