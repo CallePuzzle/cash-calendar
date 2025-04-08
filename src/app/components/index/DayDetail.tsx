@@ -12,6 +12,7 @@ function getDayDetails(day: string) {
         quantity: 15,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#11732e]",
         image: "utensils" as IconName,
       },
       {
@@ -20,6 +21,7 @@ function getDayDetails(day: string) {
         quantity: 20,
         category: "ropa",
         bgColorClass: "bg-[#d269c9]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#d269c9]",
         image: "shirt" as IconName,
       },
     ],
@@ -30,6 +32,7 @@ function getDayDetails(day: string) {
         quantity: 50,
         category: "bares y restaurantes",
         bgColorClass: "bg-[#11732e]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#11732e]",
         image: "utensils" as IconName,
       },
       {
@@ -38,6 +41,7 @@ function getDayDetails(day: string) {
         quantity: 35,
         category: "ropa",
         bgColorClass: "bg-[#d269c9]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#d269c9]",
         image: "shirt" as IconName,
       },
     ],
@@ -48,6 +52,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#f1a009]",
         image: "biceps-flexed" as IconName,
       },
       {
@@ -56,6 +61,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#0bc90b]",
         image: "pill" as IconName,
       },
       {
@@ -64,6 +70,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#ff2828]",
         image: "car-front" as IconName,
       },
       {
@@ -72,6 +79,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#f1a009]",
         image: "biceps-flexed" as IconName,
       },
       {
@@ -80,6 +88,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#0bc90b]",
         image: "pill" as IconName,
       },
       {
@@ -88,6 +97,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#ff2828]",
         image: "car-front" as IconName,
       },
       {
@@ -96,6 +106,7 @@ function getDayDetails(day: string) {
         quantity: 64,
         category: "deporte",
         bgColorClass: "bg-[#f1a009]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#f1a009]",
         image: "biceps-flexed" as IconName,
       },
       {
@@ -104,6 +115,7 @@ function getDayDetails(day: string) {
         quantity: 57.48,
         category: "farmacia",
         bgColorClass: "bg-[#0bc90b]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#0bc90b]",
         image: "pill" as IconName,
       },
       {
@@ -112,6 +124,7 @@ function getDayDetails(day: string) {
         quantity: 38.93,
         category: "vehículo",
         bgColorClass: "bg-[#ff2828]",
+        hoverShadowColorClass: "hover:shadow-[0_3px_3px_#ff2828]",
         image: "car-front" as IconName,
       },
     ],
@@ -148,20 +161,24 @@ function DayDetail({ selectedDay }: { selectedDay: Date | undefined }) {
   const liClassName =
     "bg-gray-300 m-px p-2 rounded-lg font-semibold text-2xl w-[80%] text-center md:w-[50%] lg:w-[70%]";
   return (
-    <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center pt-8 pb-8">
-      {selectedDay ? (
-        <li className={liClassName}>Día seleccionado: {selectedDayToString}</li>
-      ) : (
-        <li className={liClassName}>Selecciona un día</li>
-      )}
-      {expensesElement}
+    <div className="h-full w-full">
+      <ul className="bg-gray-100 h-full w-full flex flex-col items-center justify-center pt-8 pb-8">
+        {selectedDay ? (
+          <li className={liClassName}>
+            Día seleccionado: {selectedDayToString}
+          </li>
+        ) : (
+          <li className={liClassName}>Selecciona un día</li>
+        )}
+        {expensesElement}
 
-      {selectedDayToString && expensesElement.length === 0 ? (
-        <li className={liClassName}>Hoy no he generado ningún gasto</li>
-      ) : (
-        ""
-      )}
-    </ul>
+        {selectedDayToString && expensesElement.length === 0 ? (
+          <li className={liClassName}>Hoy no he generado ningún gasto</li>
+        ) : (
+          ""
+        )}
+      </ul>
+    </div>
   );
 }
 

@@ -42,7 +42,7 @@ function Contributors() {
               <img
                 src={contributor.avatar_url}
                 alt={contributor.login}
-                className="w-10 rounded-full"
+                className="w-10 rounded-full shadow-img"
               />
             </Link>
           </li>

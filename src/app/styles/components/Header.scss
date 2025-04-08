@@ -1,25 +1,27 @@
 .header {
+  // width: 100vw; provoca scroll horizontal
   min-width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #93ead2;
-  padding: 1rem;
-
+  box-shadow: -6px 6px 5px rgb(77, 145, 126);
+  padding: 10px;
+  margin-bottom: 10px;
   &__logo {
-    width: 5rem;
+    width: 50px;
     @media (min-width: 768px) {
-      width: 10rem;
+      width: 100px;
     }
     @media (min-width: 1024px) {
-      width: 6.5rem;
+      width: 65px;
     }
   }
 }
 
 .nav {
   &__burger {
-    width: 3rem;
+    width: 30px;
     @media (min-width: 768px) {
       display: none;
     }

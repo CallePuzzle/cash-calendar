@@ -7,24 +7,26 @@
 .footer {
   min-width: 320px;
   background-color: rgb(147, 234, 210);
+  box-shadow: 6px -6px 5px rgb(77, 145, 126);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 1.2rem 0;
+  padding: 12px 0;
+  margin-top: 10px;
   position: relative;
 
   &__arrow {
-    width: 3rem;
-    height: 3rem;
+    width: 30px;
+    height: 30px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     position: absolute;
-    top: -1.7rem;
-    margin-left: -1.5rem;
+    top: -17px;
+    margin-left: -10px;
 
     &:hover {
       animation-name: arrowUp;
@@ -63,12 +65,22 @@
       &__img {
         display: flex;
         flex-direction: row;
-        gap: 0.5rem;
+        gap: 5px;
       }
     }
 
     &__logo {
-      width: 4rem;
+      width: 40px;
     }
   }
+}
+
+.shadow-img {
+  box-shadow: 3px 3px 5px rgb(77, 145, 126);
+}
+
+.animate__heartBeat {
+  --animate-duration: 3s;
+  --animate-delay: 1s;
+  animation-iteration-count: infinite;
 }
