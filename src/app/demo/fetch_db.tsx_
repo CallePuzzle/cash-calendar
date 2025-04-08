@@ -5,7 +5,7 @@ import { unstable_cache } from "next/cache";
 
 const getCachedUser = unstable_cache(
   async () => getPrismaClient("development").user.findMany(),
-  ["my-app-user"]
+  ["my-app-user"],
 );
 
 async function fetch_db() {
@@ -14,7 +14,8 @@ async function fetch_db() {
   return (
     <section className="border flex flex-col gap-3 max-w-[220px]">
       <p>Aquí voy a pintar los datos que tengo en la db</p>
-      {users.map((user) => {
+      {/* eslint-disable-next-line */}
+      {users.map((user: any) => {
         return (
           <ul key={user.id}>
             <li>Usuario número: {user.id}</li>
