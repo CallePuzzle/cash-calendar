@@ -1,0 +1,30 @@
+import React from "react";
+
+import getPrismaClient from "@/lib/db";
+import { unstable_cache } from "next/cache";
+
+const getCachedUser = unstable_cache(
+  async () => getPrismaClient("development").user.findMany(),
+  ["my-app-user"]
+);
+
+async function fetch_db() {
+  const users = await getCachedUser();
+
+  return (
+    <section className="border flex flex-col gap-3 max-w-[220px]">
+      <p>Aquí voy a pintar los datos que tengo en la db</p>
+      {users.map((user) => {
+        return (
+          <ul key={user.id}>
+            <li>Usuario número: {user.id}</li>
+            <li>Nombre: {user.name}</li>
+            <li>Email: {user.email}</li>
+          </ul>
+        );
+      })}
+    </section>
+  );
+}
+
+export default fetch_db;
